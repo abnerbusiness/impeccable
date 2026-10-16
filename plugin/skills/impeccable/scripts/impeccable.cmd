@@ -69,7 +69,7 @@ if defined IMPECCABLE_LAUNCHER_PROBE exit /b 127
 if not defined version goto fail
 where curl.exe >nul 2>nul
 if errorlevel 1 goto curl_missing
-if not defined IMPECCABLE_DOWNLOAD_BASE set "IMPECCABLE_DOWNLOAD_BASE=https://github.com/pbakaus/impeccable/releases/download"
+if not defined IMPECCABLE_DOWNLOAD_BASE set "IMPECCABLE_DOWNLOAD_BASE=https://github.com/abnerbusiness/impeccable/releases/download"
 if exist "%IMPECCABLE_HOME%\bin\%version%\" goto cache_ready
 mkdir "%IMPECCABLE_HOME%\bin\%version%" >nul 2>nul
 if errorlevel 1 goto cache_directory_failed

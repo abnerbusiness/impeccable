@@ -119,7 +119,7 @@ if [ -n "$probing" ]; then
   exit 127
 fi
 if [ -n "$version" ] && [ "$os" != unknown ] && [ "$arch" != unknown ]; then
-  base="${IMPECCABLE_DOWNLOAD_BASE:-https://github.com/pbakaus/impeccable/releases/download}"
+  base="${IMPECCABLE_DOWNLOAD_BASE:-https://github.com/abnerbusiness/impeccable/releases/download}"
   asset="impeccable-$os-$arch"
   [ "$os" = windows ] && asset="$asset.exe"
   url="$base/engine-v$version/$asset"
